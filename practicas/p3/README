@@ -1,0 +1,14 @@
+Manual de usuario.
+
+Aplicación Go:
+
+Aplicación de uso de FIFOs simple en la cual el cliente le envia su PID al servidor, este lo imprime, 
+y le contesta con la fecha y hora actual el cual el cliente imprime.
+
+Comandos:
+
+Ejecutar Cliente: 
+    make clientGo
+
+Ejecutar Servidor:
+    make servGo

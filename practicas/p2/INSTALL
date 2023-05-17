@@ -1,0 +1,4 @@
+Manual de instalación, administración y configuración.
+
+Tener instalado el paquete de python binaryornot con al menos la version 0.4.4. Se puede instalar con el siguiente comando:
+    make instalar

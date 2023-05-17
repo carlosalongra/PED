@@ -1,0 +1,14 @@
+Manual de usuario.
+
+Para poder ejecutar el programa de Python primero asegurese que tiene instalado todas las dependencias necesarias:
+    -binaryornot 0.4.4
+
+El programa de python le permite ingresar la ruta a un archivo de texto o binario y éste le devolverá su contenido.
+Para ejecutar el programa python use el siguiente comando:
+    make ejecutar
+
+Para poder ejecutar el programa de Go asegurese de tener instalado Go con al menos la versión 1.20.1
+
+El programa de Go le permite ingresar la ruta a un archivo de texto y éste le devolverá su contenido.
+El comando para ejecutar el programa Go es el siguiente:
+    make ejecutarGo
