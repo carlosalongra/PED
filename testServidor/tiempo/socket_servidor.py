@@ -1,5 +1,8 @@
 import socket, time, os
 
+## class Servidor
+
+## def socket
 sok = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
 path_sok = input("Introducir socket: ")
 
@@ -9,6 +12,9 @@ if os.path.exists('/tmp/' + path_sok):
     os.remove('/tmp/' + path_sok)
 
 sok.bind('/tmp/' + path_sok)
+
+## def hora
+## def fecha
 
 horaformat = '%H:%M:%S'
 dateformat = '%m-%d-%Y'
@@ -29,8 +35,10 @@ while True:
         elif mensaje.decode('utf8') == 'fecha':
             conexion.send(fecha.encode('utf8'))
         
-        else: 
-            print('ERROR')
+        else:
+            conexion.send('error'.encode('utf8'))
     except:
         conexion.send('consulta no existe'.encode('utf8'))
     conexion.close()
+
+# main 
