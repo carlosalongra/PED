@@ -29,29 +29,19 @@ def server(server_address, server_port):
                 fichero = open(nombre_fichero, "rb")
                 while True:
                     data = fichero.read(bufferSize)
-                    print(data)
-                    #palindromo
-                    print("ijnefij")
                     palabras = data.split()
-                    print(palabras)
-                    print("hola")
                     soloPalindromos = []
-                    print("fro")
                     for e in palabras:
                         print(e)
                         if esPalindromo(e):
                             soloPalindromos.append(e)
-                    print(soloPalindromos)
                     if not data:
                         time.sleep(1)
                         #fragmenta los datos y los envia de manera secuencial a un cliente conectado
                         conn.sendall("fin_de_fichero")
                         break
-                    print("onwefio")
                     for p in soloPalindromos:
                         conn.sendall(p+ b'\n')
-                    #conn.sendall(data)
-                    #palindromo()
             except FileNotFoundError:
                 conn.sendall("Error al abrir el fichero\n".encode('utf-8'))
 
