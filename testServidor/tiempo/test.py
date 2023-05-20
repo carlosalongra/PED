@@ -5,11 +5,12 @@ from MainServidor import Servidor
 
 class TestServidor(unittest.TestCase):
 
-        def test_socket(self):
+        def test_fecha(self):
             sock = Servidor()
-            con = input('')
-            sok2 = sock.socket(path_sok)
-            self.assertEquals(sok2, con)
+            fecha = time.strftime('')
+            mensaje = 'fecha'
+            fecha2 = sock.fecha(mensaje)
+            self.assertEquals(fecha2, fecha)
 
 if __name__ == '__main__':
     unittest.main()
